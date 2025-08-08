@@ -1,0 +1,92 @@
+.task-container {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 8px;
+}
+
+.task-drag-handle {
+    width: 13px;
+    height: 13px;
+    margin-left: -5px;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    cursor: grab;
+    transition: background 0.3s;
+}
+
+.task-drag-handle:hover {
+    background: #7e7e7e;
+}
+
+.task span,
+.task input[type="text"] {
+    flex: 1;
+    text-align: left;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    word-break: break-word;
+    font-family: inherit;
+}
+
+.task input[type="text"] {
+    margin-left: -2px;
+}
+
+.task button {
+    background: none;
+    border: none;
+    color: #8a8a8a;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.task button:hover {
+    background: #262626;
+    color: white;
+}
+
+.task input[type="checkbox"] {
+    position: relative;
+    top: 1px;
+    transition: transform 0.2s ease;
+}
+
+.task input[type="checkbox"]:hover {
+    transform: scale(1.1);
+}
+
+.add-task-btn {
+    align-self: flex-start;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 5px;
+    transition: transform 0.2s ease;
+}
+
+.add-task-btn:hover {
+    transform: scale(1.05);
+}

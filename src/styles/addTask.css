@@ -1,0 +1,31 @@
+.new-task-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 8px;
+}
+
+.new-task-row span {
+    width: 13px;
+    height: 13px;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8a8a8a;
+    font-size: 20px;
+    margin-left: 22px;;
+}
+
+.new-task-row input {
+    flex: 1;
+    text-align: left;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+    margin-left: 1px;
+    word-break: break-word;
+}

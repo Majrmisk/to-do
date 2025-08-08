@@ -1,0 +1,104 @@
+.pane {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.pane-drag-handle {
+    width: 50px;
+    height: 4px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    cursor: grab;
+    margin: -3px auto 5px auto;
+    transition: background 0.3s;
+}
+
+.pane-drag-handle:hover {
+    background: #7e7e7e;
+}
+
+.pane-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pane-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.pane-header h2,
+.pane-header input {
+    margin: 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.pane-header input {
+    margin-left: -2px;
+}
+
+.pane-header button {
+    background: none;
+    border: none;
+    color: #c0c0c0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.delete-pane:hover {
+    background: #262626;
+    color: white;
+}
+
+.add-pane-btn {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(70, 70, 70, 0.3);
+    backdrop-filter: blur(8px);
+    color: #262626;
+    font-size: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.add-pane-btn:hover {
+    background-color: rgba(91, 91, 91, 0.5);
+    color: #777777;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #5e5e5e;
+    margin: 5px auto;
+    width: calc(95%);
+}
