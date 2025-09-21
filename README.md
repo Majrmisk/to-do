@@ -33,3 +33,7 @@ This webapp is deployed on Microsoft Azure: [TODO](https://happy-plant-0ba192310
 | Hosting          | **Microsoft Azure** |
 
 ---
+
+## License
+This project is licensed under the [Apache License 2.0](./LICENSE).
+
